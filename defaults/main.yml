@@ -1,0 +1,6 @@
+---
+# Specialised role to convert CentOS 8 to CentOS Stream 8
+# Use at your own risk
+centos8_to_centos_stream8_reboot: true
+centos8_to_centos_stream8_post_reboot_delay: "30"
+centos8_to_centos_stream8_reboot_timeout: "300"

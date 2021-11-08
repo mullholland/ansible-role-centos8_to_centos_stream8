@@ -1,0 +1,18 @@
+---
+- name: Swap Repos
+  command: dnf -y swap centos-linux-repos centos-stream-repos
+  changed_when: false
+
+- name: distro-sync
+  command: dnf -y distro-sync
+  changed_when: false
+
+- name: Reboot machine if wanted
+  reboot:
+    post_reboot_delay: "{{ os_updates_reboot_delay | default('0') }}"
+    reboot_timeout: "{{ os_updates_reboot_timeout }}"
+  when:
+    - centos8_to_centos_stream8_reboot
+  # Docker Contianer cant reboot
+  tags:
+    - molecule-notest
