@@ -1,6 +1,6 @@
 ---
 molecule_scenarios:
   - scenario: "default"
-    ansible: [2.10", "2.11", "2.12"]
+    ansible: ["2.10", "2.11", "2.12"]
     platforms:
       - "centos8"

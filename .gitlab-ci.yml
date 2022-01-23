@@ -6,7 +6,7 @@ services:
 
 stages:
   - linting
-  - "default-210""
+  - "default-210"
   - "default-211"
   - "default-212"
 
@@ -23,13 +23,13 @@ linting:
     - "command=${COMMAND} /opt/molecule.sh"
 
 
-"default-210"":
+"default-210":
   needs:
     - "linting"
-  stage: "default-210""
+  stage: "default-210"
   variables:
     SCENARIO: "default"
-    ANSIBLE: "2.10""
+    ANSIBLE: "2.10"
   rules:
     - if: $CI_COMMIT_REF_NAME == "main"
   parallel:
