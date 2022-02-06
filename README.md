@@ -1,8 +1,6 @@
 # [centos8_to_centos_stream8](#centos8_to_centos_stream8)
 
-|GitHub|GitLab|
-|------|------|
-|[![github](https://github.com/mullholland/ansible-role-centos8_to_centos_stream8/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-centos8_to_centos_stream8/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-centos8_to_centos_stream8/badges/master/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-centos8_to_centos_stream8)|[![quality](https://img.shields.io/ansible/quality/unset)](https://galaxy.ansible.com/mullholland/centos8_to_centos_stream8)|
+CentOS Linux 8 will reached End Of Life (EOL) on December 31st, 2021. This role will no longer be maintained.
 
 Convert CentOS8 to CentOS Stream 8.
 :warning: Use carefully and have a recent Backup.
